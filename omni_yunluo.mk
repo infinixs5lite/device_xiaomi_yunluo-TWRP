@@ -23,6 +23,9 @@ PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# Hide Reflash TWRP
+PRODUCT_PROPERTY_OVERRIDES += ro.twrp.vendor_boot=true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="yunluo-user 12 SP1A.210812.016 V816.0.2.0.ULYCNXM release-keys"
 
