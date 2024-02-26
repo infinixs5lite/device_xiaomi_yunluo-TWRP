@@ -21,6 +21,7 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor \
     vendor_dlkm \
     system_ext \
+    vendor_boot \
     vendor
 
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
