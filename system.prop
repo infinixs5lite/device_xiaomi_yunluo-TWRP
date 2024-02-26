@@ -1,7 +1,8 @@
-# Fstab
-ro.postinstall.fstab.prefix=/system
+# ADB
+ro.adb.secure=0
+ro.boot.dynamic_partitions=true
 
-# USB MTP
+# USB
 ro.sys.usb.storage.type=mtp
 
 # Crypto
