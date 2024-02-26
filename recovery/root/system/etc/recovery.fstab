@@ -17,6 +17,8 @@
 /product/media                  overlay     overlay                                 flags=display=media
 /product/opcust                 overlay     overlay                                 flags=display=opcust
 /product/data-app               overlay     overlay                                 flags=display=data-app
+/dev/block/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable
+/dev/block/by-name/userdata /data ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt wait,check,formattable,quota,reservedsize=128m,latemount,resize,checkpoint=block,fileencryption=aes-256-xts:aes-256-cts:v1
 /product/etc/sysconfig          overlay     overlay                                 flags=display=sysconfig
 /product/etc/permissions        overlay     overlay                                 flags=display=permissions
 /system/app                     overlay     overlay                                 flags=display=app
